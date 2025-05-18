@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5 text-light">
+  <h2 class="text-center text-info mb-4">MY INTERNSHIPS</h2>
+  
+  <!-- Internship Card 1 -->
+  <div class="row justify-content-center mb-4">
+    <div class="col-md-8 col-lg-6">
+      <a href="https://www.nullclass.com/" target="_blank" style="text-decoration: none;">
+        <div class="card bg-dark text-white border border-info shadow internship-card mx-auto">
+          <div class="card-body">
+            <h5 class="card-title text-warning">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4IK_uKvli-qwu_ojIH0fWswK5GuLc9Vo0gyAhw6C0wUKbHHaYrlLHMjMhrlz4sgtMMnA&usqp=CAU" 
+                   alt="Null Class Logo" 
+                   style="height: 25px; margin-right: 10px;">
+              NULL CLASS
+            </h5>
+            <h6 class="card-subtitle mb-2 text-info">DATA SCIENCE INTERN</h6>
+            <p class="card-text"><strong>Duration:</strong> JUNE 2024 - AUGUST 2024</p>
+            <p class="card-text">Worked on developing real world applications using Machine Learning, TensorFlow and Scikit-Learn.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Internship Card 2 -->
+  <div class="row justify-content-center mb-4">
+    <div class="col-md-8 col-lg-6">
+      <a href="https://programs.42learn.com/" target="_blank" style="text-decoration: none;">
+        <div class="card bg-dark text-white border border-success shadow internship-card mx-auto">
+          <div class="card-body">
+            <h5 class="card-title text-warning">
+              <img src="https://programs.42learn.com/assets/img/logo/logo-2.png" 
+                   alt="42 Learn Logo" 
+                   style="height: 25px; margin-right: 10px; border-radius: 5px;">
+              42 LEARN
+            </h5>
+            <h6 class="card-subtitle mb-2 text-info">ADVANCE PYTHON PROGRAMMING</h6>
+            <p class="card-text"><strong>Duration:</strong> MAY 2024 - JUNE 2024</p>
+            <p class="card-text">Worked on developing real world applications using Python.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Add more cards similarly -->
+
+</div>
+
+<!-- Style -->
+<style>
+  .internship-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+  }
+
+  .internship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #17c2ec;
+  }
+
+  .card-title img {
+    vertical-align: middle;
+  }
+
+  @media (min-width: 768px) {
+    .internship-card {
+      max-width: 500px;
+    }
+  }
+</style>
+
+{% endblock %}

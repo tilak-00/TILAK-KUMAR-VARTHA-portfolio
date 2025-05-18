@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2 class="text-center text-info mb-4">MY PROJECTS</h2>
+
+  <!-- Project 1 -->
+  <div class="d-flex justify-content-center mb-4">
+    <div class="card w-75 bg-dark text-white border border-primary shadow project-card">
+      <div class="card-body text-center">
+        <h5 class="card-title text-warning">AGE AND GENDER DETECTOR</h5>
+        <p class="card-text">Age and Gender Detector it helps to finds the person gender and approximate age.</p>
+        <p class="card-text"><strong>Tech Used:</strong> Python, Machine Learning, Tensorflow, Numpy.</p>
+        <a href="https://github.com/tilak-00/Age_and_gender_detector" target="_blank" class="btn btn-outline-light btn-sm">
+          <i class="bi bi-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="d-flex justify-content-center mb-4">
+    <div class="card w-75 bg-dark text-white border border-primary shadow project-card">
+      <div class="card-body text-center">
+        <h5 class="card-title text-warning">ANIMAL DETECTION</h5>
+        <p class="card-text">Animal detection it helps to find which animal and that breed and also find how much confidence in that animal face.</p>
+        <p class="card-text"><strong>Tech Used:</strong> Python, Machine Learning, Tensorflow, Numpy.</p>
+        <a href="https://github.com/tilak-00/Null-class-Tasks/tree/main/Null%20Class%20Tasks/Task3" target="_blank" class="btn btn-outline-light btn-sm">
+          <i class="bi bi-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Project 3 -->
+     <div class="d-flex justify-content-center mb-4">
+    <div class="card w-75 bg-dark text-white border border-primary shadow project-card">
+      <div class="card-body text-center">
+        <h5 class="card-title text-warning">SCHOOL MANAGEMENT SYSTEM</h5>
+        <p class="card-text">It manages student databse Ex: Add Student, Update Student, Remove Student using python.</p>
+        <p class="card-text"><strong>Tech Used:</strong> Python.</p>
+        <a href="https://github.com/tilak-00/School_management_system" target="_blank" class="btn btn-outline-light btn-sm">
+          <i class="bi bi-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more projects in same structure -->
+
+</div>
+
+<!-- Style -->
+<style>
+  .project-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #17c2ec;
+  }
+
+  .btn-outline-light:hover {
+    background-color: #17c2ec;
+    color: #000;
+    border-color: #17c2ec;
+  }
+</style>
+
+{% endblock %}

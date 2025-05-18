@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: TILAK KUMAR VARTHA
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn myportfolio.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: myportfolio.settings
+      - key: PYTHON_VERSION
+        value: 3.9
+      - key: SECRET_KEY
+        value: your-secret-key
+      - key: DEBUG
+        value: False
