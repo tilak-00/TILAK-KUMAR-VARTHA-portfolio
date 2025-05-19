@@ -25,7 +25,7 @@ SECRET_KEY = 'Tilak@00'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://tilak-kumar-vartha.onrender.com']
+ALLOWED_HOSTS = ['https://tilak-kumar-vartha.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
